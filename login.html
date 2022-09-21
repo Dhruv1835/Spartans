@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginForm</title>
+    <style>
+      * {
+        font-size: 20px;
+      }
+
+      body {
+        height: 100%;
+        width: 100%;
+        /* background-color: rgb(104,104,192); */
+        background-image: linear-gradient(
+          120deg,
+          rgb(69, 135, 210),
+          rgb(124, 85, 182)
+        );
+      }
+      .box {
+        width: 20%;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 480px;
+        border-radius: 20px;
+        background-color: rgb(241, 241, 241);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      input[type="submit"] {
+        height: 48px;
+        border: none;
+        color: white;
+        margin: 28px 0px;
+        width: 100%;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(69, 135, 210),
+          rgb(124, 85, 182)
+        );
+      }
+
+      .heading {
+        font-size: 20px;
+        font-weight: 750;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      form {
+        padding: 30px 50px 10px 40px;
+        width: auto;
+      }
+
+      input {
+        margin: 8px 0px 25px 0px;
+        height: 35px;
+        padding: 4px 10px;
+        width: 90%;
+        border: none;
+        border-bottom: 1px solid gray;
+        background-color: rgb(241, 241, 241);
+      }
+
+      .pass {
+        margin-top: 20px;
+      }
+      .pass > a {
+        text-decoration: none;
+        color: rgb(119, 99, 150);
+      }
+
+      .bottom {
+        margin-top: 20px;
+      }
+
+      .bottom > a {
+        text-decoration: none;
+        color: rgb(119, 99, 150);
+      }
+      .heading {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="heading">Login</div>
+      <form action="">
+        <input type="email" id="email" placeholder="Email" required /><br />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          minlength="8"
+          required
+        />
+        <br />
+
+        <input type="submit" value="Login" id="button" />
+      </form>
+      <div class="pass">Forget <a href="">Password?</a></div>
+      <div class="bottom">
+        Don't have an account? <a href="" id="login">Signup</a>
+      </div>
+    </div>
+  </body>
+</html>
